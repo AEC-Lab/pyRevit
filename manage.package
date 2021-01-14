@@ -1,0 +1,57 @@
+{
+	"version": 1,
+	"processes": [
+        {
+		    "name": "Revit.exe"
+	    }
+    ],
+	"install": [
+        {
+            "action": "copy",
+            "source": "bin",
+            "destination": "$APPDATA\\pyRevit-Voyansi"
+        },
+        {
+            "action": "copy",
+            "source": "extensions",
+            "destination": "$APPDATA\\pyRevit-Voyansi"
+        },
+        {
+            "action": "copy",
+            "source": "pyrevitlib",
+            "destination": "$APPDATA\\pyRevit-Voyansi"
+        },
+        {
+            "action": "copy",
+            "source": "site-packages",
+            "destination": "$APPDATA\\pyRevit-Voyansi"
+        },
+        {
+            "action": "copy",
+            "source": "pyRevitfile",
+            "destination": "$APPDATA\\pyRevit-Voyansi"
+        }
+    ],
+	"uninstall": [
+        {
+            "action": "delete",
+            "source": "$APPDATA\\pyRevit-Voyansi\\bin"
+        },
+        {
+            "action": "delete",
+            "source": "$APPDATA\\pyRevit-Voyansi\\extensions"
+        },
+        {
+            "action": "delete",
+            "source": "$APPDATA\\pyRevit-Voyansi\\pyrevitlib"
+        },
+        {
+            "action": "delete",
+            "source": "$APPDATA\\pyRevit-Voyansi\\site-packages"
+        },
+        {
+            "action": "delete",
+            "source": "$APPDATA\\pyRevit-Voyansi\\pyRevitfile"
+        }
+    ]
+}
