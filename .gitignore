@@ -47,3 +47,6 @@ dist/
 
 # resilio sync
 .sync
+
+# Compressed assets for Package Manager
+pyRevit-bundle.zip

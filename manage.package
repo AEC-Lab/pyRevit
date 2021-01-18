@@ -8,50 +8,22 @@
 	"install": [
         {
             "action": "copy",
-            "source": "bin",
+            "source": "pyRevit-bundle.zip",
             "destination": "$APPDATA\\pyRevit-Voyansi"
         },
         {
-            "action": "copy",
-            "source": "extensions",
-            "destination": "$APPDATA\\pyRevit-Voyansi"
-        },
-        {
-            "action": "copy",
-            "source": "pyrevitlib",
-            "destination": "$APPDATA\\pyRevit-Voyansi"
-        },
-        {
-            "action": "copy",
-            "source": "site-packages",
-            "destination": "$APPDATA\\pyRevit-Voyansi"
-        },
-        {
-            "action": "copy",
-            "source": "pyRevitfile",
-            "destination": "$APPDATA\\pyRevit-Voyansi"
+            "action": "run",
+            "source": "install-addin.bat"
         }
     ],
 	"uninstall": [
         {
             "action": "delete",
-            "source": "$APPDATA\\pyRevit-Voyansi\\bin"
+            "source": "$APPDATA\\pyRevit-Voyansi"
         },
         {
-            "action": "delete",
-            "source": "$APPDATA\\pyRevit-Voyansi\\extensions"
-        },
-        {
-            "action": "delete",
-            "source": "$APPDATA\\pyRevit-Voyansi\\pyrevitlib"
-        },
-        {
-            "action": "delete",
-            "source": "$APPDATA\\pyRevit-Voyansi\\site-packages"
-        },
-        {
-            "action": "delete",
-            "source": "$APPDATA\\pyRevit-Voyansi\\pyRevitfile"
+            "action": "run",
+            "source": "uninstall-addin.bat"
         }
     ]
 }
